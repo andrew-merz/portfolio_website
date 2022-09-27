@@ -25,7 +25,7 @@ const Header = () => (
             marginBottom: "20px",
           }}
         >
-          <DiCode size="3rem" /> <Span> Portfolio</Span>
+          <DiCode size="3rem" /> <Span>Andrew Merz</Span>
         </a>
       </Link>
     </Div1>
