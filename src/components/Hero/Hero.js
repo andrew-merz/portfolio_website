@@ -1,13 +1,32 @@
-import React from 'react';
+import React from "react";
 
-import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import Button from '../../styles/GlobalComponents/Button';
-import { LeftSection } from './HeroStyles';
+import {
+  Section,
+  SectionText,
+  SectionTitle,
+} from "../../styles/GlobalComponents";
+import Button from "../../styles/GlobalComponents/Button";
+import { LeftSection } from "./HeroStyles";
 
 const Hero = (props) => (
-  <div>
-    Hero
-  </div>
+  <Section row nopadding>
+    <LeftSection>
+      <SectionTitle main center>
+        Welcome to <br />
+        My personal Portfolio
+      </SectionTitle>
+      <SectionText>
+        Full stack software engineer with a background in business and finance.
+        I am a driven self-starter, with an eye for making things look just
+        right. When coding, I learn quickly, act precisely and create
+        dynamically. When not coding, I love listening to music and jamming
+        along.
+      </SectionText>
+      <Button onClick={() => (window.location = "merz.school@gmail.com")}>
+        Contact Me
+      </Button>
+    </LeftSection>
+  </Section>
 );
 
 export default Hero;
