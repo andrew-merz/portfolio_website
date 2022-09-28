@@ -30,13 +30,7 @@ export const SectionTitle = styled.h2`
   line-height: ${(props) => (props.main ? "72px" : "56px")};
   width: max-content;
   max-width: 100%;
-  background: linear-gradient(
-    121.57deg,
-    #ffffff 18.77%,
-    rgba(255, 255, 255, 0.66) 60.15%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background: "red";
   margin-bottom: 16px;
   padding: ${(props) => (props.main ? "58px 0 16px" : "0")};
 
@@ -64,7 +58,7 @@ export const SectionText = styled.p`
   line-height: 40px;
   font-weight: 300;
   padding-bottom: 3.6rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: "whitesmoke";
 
   @media ${(props) => props.theme.breakpoints.md} {
     max-width: 670px;
@@ -174,7 +168,7 @@ export const SecondaryBtn = styled.button`
 export const ButtonBack = styled.div`
   width: ${({ alt }) => (alt ? "150px" : "262px")};
   height: ${({ alt }) => (alt ? "52px" : "64px")};
-  border-radius: 50px;
+  border-radius: 25px;
   font-size: ${({ alt }) => (alt ? "20px" : "24px")};
   font-weight: 600;
   display: flex;
