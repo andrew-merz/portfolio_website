@@ -1,5 +1,5 @@
 import React from "react";
-import Resume from ".././public/Resume.pdf";
+
 import {
   Section,
   SectionText,
@@ -26,7 +26,7 @@ const Hero = (props) => (
         <Button onClick={() => (window.location = "merz.school@gmail.com")}>
           Contact Me
         </Button>
-        <Button href="Resume" download="Resume.pdf">
+        <Button href="../constants/Resume" download="Resume.pdf">
           {" "}
           Download Resume
         </Button>
