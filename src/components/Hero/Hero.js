@@ -1,5 +1,5 @@
 import React from "react";
-
+import Resume from ".././public/Resume.pdf";
 import {
   Section,
   SectionText,
@@ -22,9 +22,15 @@ const Hero = (props) => (
         dynamically. When not coding, I love listening to music and jamming
         along.
       </SectionText>
-      <Button onClick={() => (window.location = "merz.school@gmail.com")}>
-        Contact Me
-      </Button>
+      <div style={{ display: "flex" }}>
+        <Button onClick={() => (window.location = "merz.school@gmail.com")}>
+          Contact Me
+        </Button>
+        <Button href="Resume" download="Resume.pdf">
+          {" "}
+          Download Resume
+        </Button>
+      </div>
     </LeftSection>
   </Section>
 );
