@@ -26,8 +26,14 @@ const Hero = (props) => (
         <Button onClick={() => (window.location = "merz.school@gmail.com")}>
           Contact Me
         </Button>
-        <Button href="../constants/Resume" download="Resume.pdf">
-          {" "}
+        <Button>
+          <a
+            className="button"
+            href="../constants/Resume.pdf"
+            download="Resume.pdf"
+          >
+            Download Resume
+          </a>
           Download Resume
         </Button>
       </div>
