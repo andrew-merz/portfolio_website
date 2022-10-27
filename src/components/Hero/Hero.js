@@ -26,16 +26,10 @@ const Hero = (props) => (
         <Button onClick={() => (window.location = "merz.school@gmail.com")}>
           Contact Me
         </Button>
-        <Button>
-          <a
-            className="button"
-            href="../constants/Resume.pdf"
-            download="Resume.pdf"
-          >
-            Download Resume
-          </a>
-          Download Resume
-        </Button>
+
+        <a href="Resume.pdf" download="Resume.pdf">
+          <Button>Download Resume</Button>
+        </a>
       </div>
     </LeftSection>
   </Section>

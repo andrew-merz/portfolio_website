@@ -7,10 +7,18 @@ export const Boxes = styled.div`
   gap: 24px;
   margin: 24px 0 40px;
 
-  @media ${(props) => props.theme.breakpoints.md} {
+  @media ${(props) => props.theme.breakpoints.lg} {
     gap: 16px;
     margin: 20px 0 32px;
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    max-width: 500px;
+    margin: 24px auto;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
@@ -33,7 +41,7 @@ export const Box = styled.div`
   }
 
   @media ${(props) => props.theme.breakpoints.md} {
-    height: 435px;
+    height: 245px;
     padding: 16px;
   }
 
