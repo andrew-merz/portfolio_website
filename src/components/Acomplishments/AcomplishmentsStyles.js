@@ -28,7 +28,8 @@ export const Box = styled.div`
   height: 425px;
   padding: 24px;
   @media ${(props) => props.theme.breakpoints.lg} {
-    height: 400px;
+    height: 420px;
+    padding: 16px;
   }
 
   @media ${(props) => props.theme.breakpoints.md} {
@@ -37,7 +38,7 @@ export const Box = styled.div`
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    height: 150px;
+    height: 200px;
     padding: 12px;
 
     &:nth-child(2n) {
@@ -48,14 +49,14 @@ export const Box = styled.div`
 export const BoxNum = styled.h5`
   font-style: normal;
   font-weight: 600;
-  font-size: 34px;
+  font-size: 26px;
   line-height: 40px;
   letter-spacing: 0.01em;
   color: #ffffff;
   margin-bottom: 8px;
 
   @media ${(props) => props.theme.breakpoints.md} {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 32px;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
@@ -78,8 +79,8 @@ export const BoxText = styled.p`
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 16px;
+    line-height: 16px;
   }
 `;
 
